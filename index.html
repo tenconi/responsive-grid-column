@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="tenco | Daniel Tenconi">
+    <title>Reponsive Grid</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+          <a href="https://tenco.com.ar/" target="_blank"><img src="https://tenco.com.ar/static/media/tenco_logo_light.7ce41bedf5039967ad9dd15ddc1e811d.svg"  alt="tenco" class="brand" /> <p><em>by Daniel Tenconi</em></p></a>          
+        </header>
+
+        <h2 class="title">Reponsive <em>Grid</em> :</h2>
+        <p class="description">In this example, we can see how the items pass to the next row when the size of the column is less than 150px.
+            <br>
+        We only apply the the property "<em>auto-fit, minmax(150px, 1fr)</em>" in "grid-template-columns.        
+        </p>
+
+        <div class="result">
+
+            <div class="col" id="show">
+                <h3 class="result__title">Results:</h3>
+                <div class="content-box">
+                    <div class="item">Item 1</div>
+                    <div class="item">Item 2 </div>
+                    <div class="item">Item 3</div>
+                    <div class="item">Item 4</div>
+
+                </div>
+            </div>
+
+            <div class="col" id="code">
+                <h3 class="result__title">Code:</h3>
+                <samp>
+                    <code>
+                        .content-box{<br>
+                            <span class="green">display: grid;<br>
+                            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));<br>
+                            gap: 10px;</span><br>
+                        }
+                    </code>
+                </samp>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
